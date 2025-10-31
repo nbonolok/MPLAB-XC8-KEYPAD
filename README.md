@@ -26,7 +26,8 @@ be included when using the keypad library:
  A 4x4 keypad  is connected to the PIC16F887 microcontroller’s PORTB. 
 ```C
 
-  #include <keypad.h>  
+  #include <keypad.h>
+   //PIC initialization code here 
     void  main(void){      
     KEYPAD(&PORTB, &TRISB);      
       while(1){             
