@@ -10,6 +10,18 @@ be included when using the keypad library:
 ```C
 #include <keypad.h>
 ```
+The following variables in the **keypad.h** header file must be changed to match keypad used 4x4 or 4x3 layouts.
+```C
+extern  double  _XTAL_FREQ;
+#define ROWS  4
+#define COLS  4
+const char keymap[ROWS][COLS] = {
+    {'1','2','3','A'},
+    {'4','5','6','B'},
+    {'7','8','9','C'},
+    {'*','0','#','D'}
+};
+```
 | Function   | KEYPAD(\&port,\&tris) |
 | :---- | :---- |
 | Description | A constructor like function that is used for initialization of the PIC PORT <br>and TRIS when interfacing to a keypad |
