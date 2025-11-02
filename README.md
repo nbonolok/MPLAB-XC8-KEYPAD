@@ -40,7 +40,8 @@ const char keymap[ROWS][COLS] = {
 | Return | char  |
 
 ### Example:  
- A 4x4 keypad  is connected to the PIC16F887 microcontroller’s PORTB. 
+ A 4x4 keypad  is connected to the PIC16F887 microcontroller’s PORTB 
+![PIC16F887 example] https://github.com/nbonolok/MPLAB-XC8-KEYPAD/blob/main/keypad.png
 ```C
 
   #include <keypad.h>
