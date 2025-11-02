@@ -11,6 +11,10 @@ be included when using the keypad library:
 #include <keypad.h>
 ```
 The following variables in the **keypad.h** header file must be changed to match keypad used 4x4 or 4x3 layouts.
+1. **_XTAL_FREQ** : Used for selection of the oscillator frequency
+2. **ROWS** : Number of rows in the selected keypad
+3. **COLS** : Number of columns in the selected keypad
+4. **keymap**: Used for mapping keypad ascii values as in the keypad layout  
 ```C
 extern  double  _XTAL_FREQ;
 #define ROWS  4
@@ -22,6 +26,7 @@ const char keymap[ROWS][COLS] = {
     {'*','0','#','D'}
 };
 ```
+## User Functions
 | Function   | KEYPAD(\&port,\&tris) |
 | :---- | :---- |
 | Description | A constructor like function that is used for initialization of the PIC PORT <br>and TRIS when interfacing to a keypad |
